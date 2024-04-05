@@ -1,0 +1,36 @@
+.box {
+    width: 400px;
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .manager-list {
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }

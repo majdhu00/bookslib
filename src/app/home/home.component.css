@@ -1,0 +1,18 @@
+
+  
+P{
+
+    text-align:center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home-container {
+    background-image: url('https://cdn.shopify.com/s/files/1/0953/4528/files/SASB_2022_10_21_Shop_Amy_s-08019_copy_600x600.jpg?v=1666818571');
+    height: 100vh;
+    
+  }
+  
+  /* Add additional styles for content if needed */
+  .content {
+    color: #fff;
+  }

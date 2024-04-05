@@ -1,0 +1,12 @@
+<h2>Settings</h2>
+<div class="box">
+  
+    <input type="text" [(ngModel)]="newManager" placeholder="Enter manager name">
+    <button (click)="addManager()">Add Manager</button>
+    <div *ngFor="let manager of managers">{{ manager }}</div>
+    <p style="color: red;">{{ errorMessage }}</p>
+  </div>
+
+  <div class="content">
+    <button (click)="toggleDarkMode()">toggle</button>
+  </div>

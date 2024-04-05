@@ -1,0 +1,35 @@
+.container {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  li {
+    float: left;
+    margin-right: 200px;
+  }
+  
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    
+  }
+  
+  li.active {
+    background-color: #4CAF50;
+  }

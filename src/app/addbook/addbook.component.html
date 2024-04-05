@@ -1,0 +1,20 @@
+<h2> add book to the library</h2>
+<form class="form-container" (ngSubmit)="onSubmit(form)"  #form="ngForm">
+    <input type="text" placeholder="enter book name" required ngModel name="bookName" #bookname="ngModel"/>
+    <p *ngIf="bookname.invalid && bookname.touched" [ngStyle]="{'color':'red'}">Name cannot be empty</p>
+    
+    <input type="text" placeholder="enter author name" required ngModel name="author" #author="ngModel"/>
+    <p *ngIf="author.invalid && author.touched" [ngStyle]="{'color':'red'}">Name cannot be empty</p>
+    
+    <input type="file" accept="image/*" (change)="onFileSelected($event)" name="image" />
+
+    
+    
+    <input type="text" placeholder="enter published year" required ngModel name="publishedYear" #publishedYear="ngModel"/>
+    <p *ngIf="publishedYear.invalid && publishedYear.touched" [ngStyle]="{'color':'red'}">Invalid published year</p>
+    
+    <input type="text" placeholder="enter quantity" required ngModel name="quantity" #quantity="ngModel"/>
+    <p *ngIf="quantity.invalid && quantity.touched" [ngStyle]="{'color':'red'}">Invalid quantity</p>
+    
+    <button type="submit" [disabled]="!form.valid">Add Book</button>
+  </form>
